@@ -54,7 +54,17 @@ final class PhprobertoModuleGhcard extends PhprobertoModule
 
 		if ($table->load(array('username' => $member)))
 		{
-			return json_decode($table->profile);
+			// For now cached profiles will expire in 2h.
+			$now = new DateTime;
+			$expireDate = new DateTime($table->created_date);
+			$expireDate->add(new DateInterval('PT2H'));
+
+			if ($now < $expireDate)
+			{
+				return json_decode($table->profile);
+			}
+
+			$table->delete($table->id);
 		}
 
 		$githubOptions = new JRegistry(
