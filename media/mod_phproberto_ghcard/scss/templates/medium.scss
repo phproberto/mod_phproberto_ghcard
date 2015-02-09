@@ -1,0 +1,142 @@
+.mod-phproberto-ghcard.medium {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #eee #ddd #bbb;
+	border-image: none;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+
+	.github-card {
+		background: none repeat scroll 0 0 #fff;
+		border-radius: 5px;
+		color: $color-main;
+		position: relative;
+		text-align: center;
+
+		a {
+			color: $color-link;
+
+			&:hover {
+				color: $color-link-hover
+			}
+		}
+	}
+	.github-card strong,
+	.user-card h2 {
+		color: $color-highlight;
+		font-size: 170%;
+	}
+	.user-card h2 span {
+		color: $color-main;
+	}
+	.github-link {
+		display: block;
+		float: left;
+		height: 32px;
+		width: 32px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		margin: 10px 0 0 10px;
+		background-image: url('../img/github.png');
+		opacity: 0.6;
+	}
+	.github-card .header {
+		background-color: #000;
+		background-position: center center;
+		background-size: cover;
+		border-radius: 4px 4px 0 0;
+		height: 148px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+	.github-card .footer {
+		padding: 10px;
+	}
+	.github-card .avatar {
+		background: none repeat scroll 0 0 #fff;
+		border-radius: 100%;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+		display: inline-block;
+		overflow: hidden;
+		text-decoration: none;
+	}
+	.github-card .avatar:hover {
+	}
+	.github-card h2 {
+		font-size: 24px;
+		font-weight: 500;
+		text-decoration: none;
+
+		span {
+			display: block;
+			font-size: 80%;
+			font-weight: normal;
+		}
+	}
+	.github-card ul {
+		border-bottom: 1px solid $color-border;
+		border-top: 1px solid $color-border;
+		font-size: 12px;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+	}
+	.github-card ul:after {
+		clear: both;
+		content: "";
+		display: block;
+	}
+	.github-card .status li {
+		box-shadow: 1px 0 0 $color-border;
+		float: left;
+		padding: 8px 0;
+	}
+	.github-card .status li:last-of-type {
+		box-shadow: none;
+	}
+	.github-card .status strong {
+		display: block;
+		line-height: 1.6;
+	}
+	.github-card .status a {
+		text-decoration: none;
+	}
+	.github-card .status a:hover {
+		color: #4183c4;
+	}
+	.user-card .header {
+		background-image: url("https://assets-cdn.github.com/assets/modules/aws/aws-bg-80b292690ba587b305c2c038c496ffc8ff08d3bf6be6c1ba64d48bedc09cc36f.jpg");
+	}
+	.user-card .User {
+		background-position: left top;
+	}
+	.user-card .Organization {
+		background-position: right top;
+	}
+	.user-card .avatar {
+		border: 3px solid #fff;
+		margin-top: -40px;
+		position: relative;
+	}
+	.user-card img {
+		display: block;
+		height: 80px;
+		width: 80px;
+	}
+	.user-card h2 {
+		letter-spacing: -0.06em;
+		line-height: 1.2;
+		margin: 16px 0 20px;
+	}
+	.user-card .status li {
+		width: 50%;
+	}
+}
+

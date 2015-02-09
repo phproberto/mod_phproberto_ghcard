@@ -1,0 +1,9 @@
+{
+	"wwwDir"           : "/var/www/joomla-cms",
+	"browserSyncProxy" : "localhost",
+	"extensions"       : {
+		"modules"    : {
+			"frontend"       : ["ghcard"]
+		}
+	}
+}
