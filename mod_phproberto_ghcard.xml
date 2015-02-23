@@ -48,22 +48,42 @@
 		<fields name="params" addfieldpath="modules/mod_phproberto_ghcard/field">
 			<fieldset name="basic">
 				<field
+					name="script"
+					type="phproberto.script"
+					hiddenLabel="true"
+					loadJquery="true"
+					script="admin.min.js"
+				/>
+				<field
 					name="github_member"
 					type="text"
 					label="MOD_PHPROBERTO_GHCARD_PARAMS_GITHUB_MEMBER"
 					description="MOD_PHPROBERTO_GHCARD_PARAMS_GITHUB_MEMBER_DESC"
 				/>
 				<field
+					name="authenticate"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_PHPROBERTO_GHCARD_PARAMS_AUTHENTICATE"
+					description="MOD_PHPROBERTO_GHCARD_PARAMS_AUTHENTICATE_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
 					name="github_user"
 					type="text"
 					label="MOD_PHPROBERTO_GHCARD_PARAMS_GITHUB_USERNAME"
 					description="MOD_PHPROBERTO_GHCARD_PARAMS_GITHUB_USERNAME_DESC"
+					class="js-ghcard-authentication-enabled"
 				/>
 				<field
 					name="github_password"
 					type="password"
 					label="MOD_PHPROBERTO_GHCARD_PARAMS_GITHUB_PASSWORD"
 					description="MOD_PHPROBERTO_GHCARD_PARAMS_GITHUB_PASSWORD_DESC"
+					class="js-ghcard-authentication-enabled"
 				/>
 				<field
 					name="layout"
