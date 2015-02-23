@@ -2,8 +2,10 @@
 	"wwwDir"           : "/var/www/joomla-cms",
 	"browserSyncProxy" : "localhost",
 	"extensions"       : {
+		"components" : ["github"],
+		"libraries"  : ["phproberto"],
 		"modules"    : {
-			"frontend"       : ["ghcard"]
+			"frontend"       : ["card"]
 		}
 	}
 }

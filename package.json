@@ -1,7 +1,7 @@
 {
-  "name": "mod_phproberto_ghcard",
+  "name": "pkg_github",
   "version": "1.0.0",
-  "description": "Joomla module to display your Github profile information",
+  "description": "Joomla package to display Github information",
   "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/phproberto/mod_phproberto_ghcard.git"
+    "url": "git://github.com/phproberto/pkg_github.git"
   },
   "keywords": [
     "github",
@@ -37,7 +37,7 @@
   "author": "Roberto Segura López",
   "license": "GPL v2",
   "bugs": {
-    "url": "https://github.com/phproberto/mod_phproberto_ghcard/issues"
+    "url": "https://github.com/phproberto/pkg_github/issues"
   },
-  "homepage": "https://github.com/phproberto/mod_phproberto_ghcard"
+  "homepage": "https://github.com/phproberto/pkg_github"
 }

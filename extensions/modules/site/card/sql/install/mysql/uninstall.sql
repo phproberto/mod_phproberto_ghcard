@@ -1,0 +1,1 @@
+DROP TABLE `#__github_card`;

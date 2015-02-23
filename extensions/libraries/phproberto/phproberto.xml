@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade" version="2.5">
+    <name>phproberto - Library</name>
+    <libraryname>phproberto</libraryname>
+    <creationDate>February 2015</creationDate>
+    <author>Roberto Segura</author>
+    <authorEmail>roberto@phproberto.com</authorEmail>
+    <authorUrl>www.phproberto.com</authorUrl>
+    <copyright>Copyright (C) 2015 Roberto Segura López - All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later, see LICENSE.</license>
+    <version>1.0.0</version>
+    <description>phproberto common libraries</description>
+    <files>
+        <folder>form</folder>
+        <folder>language</folder>
+        <folder>module</folder>
+        <filename>LICENSE</filename>
+        <filename>phproberto.xml</filename>
+        <filename>library.php</filename>
+    </files>
+
+	<media folder="media">
+		<folder>phproberto</folder>
+	</media>
+</extension>

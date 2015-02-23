@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="2.5" method="upgrade">
+	<name>PKG_GITHUB</name>
+    <author>Roberto Segura</author>
+    <authorEmail>roberto@phproberto.com</authorEmail>
+    <authorUrl>www.phproberto.com</authorUrl>
+	<creationDate>February 2015</creationDate>
+	<packager>Roberto Segura</packager>
+	<packagename>github</packagename>
+	<packagerurl>http://www.phproberto.com</packagerurl>
+	<version>1.0.0</version>
+	<description>PKG_GITHUB_XML_DESCRIPTION</description>
+	<!-- Extension to install -->
+	<files folder="extensions">
+		<!-- Components -->
+		<!-- file type="component" id="github" >components/com_github</file -->
+		<!-- Libraries -->
+		<file type="library" id="phproberto">libraries/phproberto</file>
+		<!-- Modules -->
+   		<file type="module" id="mod_github_card" client="site">modules/site/card</file>
+		<!-- Plugins -->
+		<!-- file type="plugin" id="phproberto_sample" group="content">plugins/content/sample</file -->
+		<!-- Templates -->
+		<!-- file type="template" id="sample" client="site">templates/site/sample</file -->
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.pkg_github.sys.ini</language>
+	</languages>
+</extension>

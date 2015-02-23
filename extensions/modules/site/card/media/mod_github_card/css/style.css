@@ -1,0 +1,272 @@
+.mod-github-card.default {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eee #ddd #bbb;
+  border-image: none;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14); }
+  .mod-github-card.default .github-card {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 5px;
+    color: #555;
+    padding: 8px 8px 0;
+    position: relative; }
+  .mod-github-card.default .github-card a {
+    color: #4183c4;
+    outline: 0 none;
+    text-decoration: none; }
+  .mod-github-card.default .github-card a:hover {
+    text-decoration: underline; }
+  .mod-github-card.default .github-card .header {
+    position: relative; }
+  .mod-github-card.default .github-card .button {
+    background-color: #e6e6e6;
+    background-image: linear-gradient(#fafafa, #eaeaea);
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    color: #555;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 4px 8px 4px 7px;
+    position: absolute;
+    right: 0;
+    text-shadow: 0 1px 0 #fff;
+    top: 0; }
+  .mod-github-card.default .github-card .button:hover {
+    background-color: #3072b3;
+    background-image: linear-gradient(#599bdc, #3072b3);
+    border-color: #518cc6 #518cc6 #2a65a0;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+  .mod-github-card.default .user-card .header {
+    min-height: 48px;
+    padding: 3px 0 4px 57px; }
+  .mod-github-card.default .user-card .header a {
+    color: #707070;
+    text-decoration: none; }
+  .mod-github-card.default .user-card .header a:hover strong {
+    text-decoration: underline; }
+  .mod-github-card.default .user-card img {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 4px;
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 48px; }
+  .mod-github-card.default .user-card strong {
+    color: #292f33;
+    display: block;
+    font-size: 16px;
+    line-height: 1.6; }
+  .mod-github-card.default .user-card ul {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    color: #707070;
+    font-size: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    margin: 0 -8px; }
+  .mod-github-card.default .user-card ul:after {
+    clear: both;
+    content: "";
+    display: block; }
+  .mod-github-card.default .user-card .status a {
+    color: #707070;
+    text-decoration: none; }
+  .mod-github-card.default .user-card .status a:hover {
+    color: #4183c4; }
+  .mod-github-card.default .user-card .status li {
+    box-shadow: 1px 0 0 #eee;
+    float: left;
+    padding: 8px 10px;
+    text-align: center; }
+  .mod-github-card.default .user-card .status li:last-of-type {
+    box-shadow: none; }
+  .mod-github-card.default .user-card .footer {
+    color: #646464;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 11px 0 10px; }
+  .mod-github-card.default .user-card .footer a {
+    color: #646464; }
+  .mod-github-card.default .repo-card .header {
+    padding: 3px 0 4px 57px; }
+  .mod-github-card.default .repo-card .avatar, .mod-github-card.default .repo-card .avatar img {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 4px;
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 48px; }
+  .mod-github-card.default .repo-card .header a {
+    color: #707070; }
+  .mod-github-card.default .repo-card .header strong {
+    display: block;
+    font-size: 18px;
+    line-height: 1.4; }
+  .mod-github-card.default .repo-card .header strong a {
+    color: #292f33; }
+  .mod-github-card.default .repo-card .header sup {
+    color: #797979;
+    font-size: 10px;
+    margin-left: 3px; }
+  .mod-github-card.default .repo-card .content {
+    padding: 6px 0 10px; }
+  .mod-github-card.default .repo-card .content p {
+    clear: both;
+    font: 18px/24px Georgia,"Times New Roman",Palatino,serif;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    word-wrap: break-word; }
+  .mod-github-card.default .repo-card .footer {
+    border-top: 1px solid #eee;
+    padding: 8px 0 6px; }
+  .mod-github-card.default .repo-card .status {
+    font-size: 10px;
+    padding-right: 10px;
+    text-transform: uppercase; }
+  .mod-github-card.default .repo-card .status strong {
+    font-size: 12px;
+    padding-right: 5px; }
+
+.mod-github-card.medium, .mod-github-card.dark {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eee #ddd #bbb;
+  border-image: none;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14); }
+  .mod-github-card.medium .github-card, .mod-github-card.dark .github-card {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 5px;
+    color: #707070;
+    position: relative;
+    text-align: center; }
+    .mod-github-card.medium .github-card a, .mod-github-card.dark .github-card a {
+      color: #707070; }
+      .mod-github-card.medium .github-card a:hover, .mod-github-card.dark .github-card a:hover {
+        color: #4183c4; }
+  .mod-github-card.medium .github-card strong, .mod-github-card.dark .github-card strong,
+  .mod-github-card.medium .user-card h2,
+  .mod-github-card.dark .user-card h2 {
+    color: #292f33;
+    font-size: 170%; }
+  .mod-github-card.medium .user-card h2 span, .mod-github-card.dark .user-card h2 span {
+    color: #707070; }
+  .mod-github-card.medium .github-link, .mod-github-card.dark .github-link {
+    display: block;
+    float: left;
+    height: 32px;
+    width: 32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+    background-image: url("../img/github.png");
+    opacity: 0.6; }
+  .mod-github-card.medium .github-card .header, .mod-github-card.dark .github-card .header {
+    background-color: #000;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+    height: 148px;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+  .mod-github-card.medium .github-card .footer, .mod-github-card.dark .github-card .footer {
+    padding: 10px; }
+  .mod-github-card.medium .github-card .avatar, .mod-github-card.dark .github-card .avatar {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none; }
+  .mod-github-card.medium .github-card h2, .mod-github-card.dark .github-card h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none; }
+    .mod-github-card.medium .github-card h2 span, .mod-github-card.dark .github-card h2 span {
+      display: block;
+      font-size: 80%;
+      font-weight: normal; }
+  .mod-github-card.medium .github-card ul, .mod-github-card.dark .github-card ul {
+    border-bottom: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+    font-size: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase; }
+  .mod-github-card.medium .github-card ul:after, .mod-github-card.dark .github-card ul:after {
+    clear: both;
+    content: "";
+    display: block; }
+  .mod-github-card.medium .github-card .status li, .mod-github-card.dark .github-card .status li {
+    box-shadow: 1px 0 0 #eeeeee;
+    float: left;
+    padding: 8px 0; }
+  .mod-github-card.medium .github-card .status li:last-of-type, .mod-github-card.dark .github-card .status li:last-of-type {
+    box-shadow: none; }
+  .mod-github-card.medium .github-card .status strong, .mod-github-card.dark .github-card .status strong {
+    display: block;
+    line-height: 1.6; }
+  .mod-github-card.medium .github-card .status a, .mod-github-card.dark .github-card .status a {
+    text-decoration: none; }
+  .mod-github-card.medium .github-card .status a:hover, .mod-github-card.dark .github-card .status a:hover {
+    color: #4183c4; }
+  .mod-github-card.medium .user-card .header, .mod-github-card.dark .user-card .header {
+    background-image: url("https://assets-cdn.github.com/assets/modules/aws/aws-bg-80b292690ba587b305c2c038c496ffc8ff08d3bf6be6c1ba64d48bedc09cc36f.jpg"); }
+  .mod-github-card.medium .user-card .User, .mod-github-card.dark .user-card .User {
+    background-position: left top; }
+  .mod-github-card.medium .user-card .Organization, .mod-github-card.dark .user-card .Organization {
+    background-position: right top; }
+  .mod-github-card.medium .user-card .avatar, .mod-github-card.dark .user-card .avatar {
+    border: 3px solid #fff;
+    margin-top: -40px;
+    position: relative; }
+  .mod-github-card.medium .user-card img, .mod-github-card.dark .user-card img {
+    display: block;
+    height: 80px;
+    width: 80px; }
+  .mod-github-card.medium .user-card h2, .mod-github-card.dark .user-card h2 {
+    letter-spacing: -0.06em;
+    line-height: 1.2;
+    margin: 16px 0 20px; }
+  .mod-github-card.medium .user-card .status li, .mod-github-card.dark .user-card .status li {
+    width: 50%; }
+
+.mod-github-card.dark .github-card {
+  background: none repeat scroll 0 0 #2e353c;
+  color: #999999; }
+  .mod-github-card.dark .github-card a {
+    color: #999999; }
+    .mod-github-card.dark .github-card a:hover {
+      color: #4183c4; }
+.mod-github-card.dark .user-card h2 {
+  color: white; }
+.mod-github-card.dark .github-card strong {
+  color: #999999; }
+.mod-github-card.dark .user-card h2 span {
+  color: #999999; }
+.mod-github-card.dark .github-card .status li {
+  box-shadow: 1px 0 0 #555555; }
+.mod-github-card.dark .github-card ul {
+  border-bottom: 1px solid #555555;
+  border-top: 1px solid #555555; }
+.mod-github-card.dark .github-card .footer {
+  padding: 10px; }
