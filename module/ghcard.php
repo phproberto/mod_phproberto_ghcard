@@ -39,9 +39,10 @@ final class PhprobertoModuleGhcard extends PhprobertoModule
 	{
 		$params = $this->getParams();
 
-		$username = $params->get('github_user');
-		$password = $params->get('github_password');
-		$member = $params->get('github_member');
+		$username     = $params->get('github_user');
+		$authenticate = $params->get('authenticate', 0);
+		$password     = $params->get('github_password');
+		$member       = $params->get('github_member');
 
 		if (!$member)
 		{
@@ -67,14 +68,13 @@ final class PhprobertoModuleGhcard extends PhprobertoModule
 			$table->delete($table->id);
 		}
 
-		$githubOptions = new JRegistry(
-			array(
-				'api' => array(
-					'username' => $username,
-					'password' => $password
-				)
-			)
-		);
+		$githubOptions = new JRegistry;
+
+		if ($authenticate && $username && $password)
+		{
+			$githubOptions->set('api.username', $username);
+			$githubOptions->set('api.password', $password);
+		}
 
 		try
 		{
