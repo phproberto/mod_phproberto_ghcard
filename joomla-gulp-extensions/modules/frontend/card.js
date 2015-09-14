@@ -2,9 +2,6 @@ var gulp = require('gulp');
 
 var config = require('../../../gulp-config.json');
 
-var extPath   = './extensions/modules/site/card';
-var mediaPath = extPath + '/media/mod_github_card';
-
 // Dependencies
 var browserSync = require('browser-sync');
 var minifyCSS   = require('gulp-minify-css');
@@ -14,29 +11,33 @@ var sass        = require('gulp-ruby-sass');
 var uglify      = require('gulp-uglify');
 var zip         = require('gulp-zip');
 
+var baseTask  = 'modules.frontend.card';
+var extPath   = './extensions/modules/site/card';
+var mediaPath = extPath + '/media/mod_github_card';
+
 // Clean
-gulp.task('clean:modules.frontend.card', ['clean:modules.frontend.card:media'], function() {
+gulp.task('clean:' + baseTask, ['clean:' + baseTask + ':media'], function() {
 	return gulp.src(config.wwwDir + '/modules/mod_github_card', { read: false })
 		.pipe(rm({ force: true }));
 });
 
 // Clean: media
-gulp.task('clean:modules.frontend.card:media', function() {
+gulp.task('clean:' + baseTask + ':media', function() {
 	return gulp.src(config.wwwDir + '/media/mod_github_card', { read: false })
 		.pipe(rm({ force: true }));
 });
 
 // Copy
-gulp.task('copy:modules.frontend.card',
+gulp.task('copy:' + baseTask,
 	[
-		'copy:modules.frontend.card:module',
-		'copy:modules.frontend.card:media'
+		'copy:' + baseTask + ':module',
+		'copy:' + baseTask + ':media'
 	],
 	function() {
 });
 
 // Copy module
-gulp.task('copy:modules.frontend.card:module', ['clean:modules.frontend.card', 'copy:modules.frontend.card:media'], function() {
+gulp.task('copy:' + baseTask + ':module', ['clean:' + baseTask, 'copy:' + baseTask + ':media'], function() {
 	return gulp.src([
 		extPath + '/**',
 		'!' + extPath + '/media',
@@ -46,7 +47,7 @@ gulp.task('copy:modules.frontend.card:module', ['clean:modules.frontend.card', '
 });
 
 // Copy media
-gulp.task('copy:modules.frontend.card:media', ['clean:modules.frontend.card:media'], function() {
+gulp.task('copy:' + baseTask + ':media', ['clean:' + baseTask + ':media'], function() {
 	return gulp.src([
 			mediaPath + '/**'
 		])
@@ -54,7 +55,7 @@ gulp.task('copy:modules.frontend.card:media', ['clean:modules.frontend.card:medi
 });
 
 // Sass
-gulp.task('sass:modules.frontend.card', function () {
+gulp.task('sass:' + baseTask, function () {
 	return gulp.src(mediaPath + '/scss/style.scss')
 		.pipe(sass({loadPath: [mediaPath + '/scss']}))
 		.pipe(gulp.dest(mediaPath + '/css'))
@@ -68,7 +69,7 @@ gulp.task('sass:modules.frontend.card', function () {
 });
 
 // Compile scripts
-gulp.task('scripts:modules.frontend.card', function () {
+gulp.task('scripts:' + baseTask, function () {
 	return gulp.src([
 			mediaPath + '/js/**/*.js',
 			'!' + mediaPath + '/js/**/*.min.js',
@@ -84,7 +85,7 @@ gulp.task('scripts:modules.frontend.card', function () {
 });
 
 // Watch
-gulp.task('watch:modules.frontend.card',
+gulp.task('watch:' + baseTask,
 	[
 		'watch:modules.frontend.card:module',
 		'watch:modules.frontend.card:scripts',
@@ -94,32 +95,32 @@ gulp.task('watch:modules.frontend.card',
 });
 
 // Watch: Module
-gulp.task('watch:modules.frontend.card:module', function() {
+gulp.task('watch:' + baseTask + ':module', function() {
 	gulp.watch([
 			extPath + '/**',
 			'!' + mediaPath,
 			'!' + mediaPath + '/**'
 		],
-		['copy:modules.frontend.card:module', browserSync.reload]);
+		['copy:' + baseTask + ':module', browserSync.reload]);
 });
 
 // Watch: Scripts
-gulp.task('watch:modules.frontend.card:scripts',
+gulp.task('watch:' + baseTask + ':scripts',
 	function() {
 		gulp.watch([
 			mediaPath + '/js/**/*.js',
 			'!' + mediaPath + '/js/**/*.min.js'
 		],
-		['scripts:modules.frontend.card', browserSync.reload]);
+		['scripts:' + baseTask, browserSync.reload]);
 });
 
 // Watch: Styles
-gulp.task('watch:modules.frontend.card:sass',
+gulp.task('watch:' + baseTask + ':sass',
 	function() {
 		gulp.watch(
 			[
 				mediaPath + '/scss/**'
 			],
-			['sass:modules.frontend.card', browserSync.reload]
+			['sass:' + baseTask, browserSync.reload]
 		);
 });

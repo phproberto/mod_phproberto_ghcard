@@ -1,11 +1,6 @@
 {
-	"wwwDir"           : "/var/www/joomla-cms",
-	"browserSyncProxy" : "localhost",
-	"extensions"       : {
-		"components" : ["github"],
-		"libraries"  : ["phproberto"],
-		"modules"    : {
-			"frontend"       : ["card"]
-		}
+	"wwwDir"        : "/var/www/joomla-cms",
+	"browserConfig" : {
+		"proxy" : "localhost"
 	}
 }

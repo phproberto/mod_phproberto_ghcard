@@ -1,0 +1,7 @@
+{
+	"libraries" : ["phproberto"],
+	"modules"   : {
+		"frontend" : ["card"]
+	},
+	"packages"  : ["github"]
+}
